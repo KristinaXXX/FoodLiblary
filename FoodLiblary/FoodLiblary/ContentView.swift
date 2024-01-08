@@ -14,6 +14,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("List", systemImage: "list.bullet")
                 }
+                .modelContainer(for: [Post.self])
             HelloView()
                 .tabItem {
                     Label("Hello", systemImage: "abc")
