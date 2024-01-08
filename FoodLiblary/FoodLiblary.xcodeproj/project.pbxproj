@@ -11,14 +11,28 @@
 		611B52B52B49C752005D4E8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52B42B49C752005D4E8A /* ContentView.swift */; };
 		611B52B72B49C757005D4E8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611B52B62B49C757005D4E8A /* Assets.xcassets */; };
 		611B52BA2B49C757005D4E8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611B52B92B49C757005D4E8A /* Preview Assets.xcassets */; };
+		611B52C12B4A9D16005D4E8A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52C02B4A9D16005D4E8A /* Post.swift */; };
+		611B52C32B4A9DA2005D4E8A /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52C22B4A9DA2005D4E8A /* PostData.swift */; };
+		611B52C52B4AA0DB005D4E8A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52C42B4AA0DB005D4E8A /* InfoView.swift */; };
+		611B52C72B4AA27A005D4E8A /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52C62B4AA27A005D4E8A /* InfoRow.swift */; };
+		611B52C92B4AA4FD005D4E8A /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52C82B4AA4FD005D4E8A /* InfoDetails.swift */; };
+		611B52CB2B4AB036005D4E8A /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52CA2B4AB036005D4E8A /* HelloView.swift */; };
+		611B52CD2B4AB0C4005D4E8A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		611B52AF2B49C752005D4E8A /* FoodLiblary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodLiblary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		611B52AF2B49C752005D4E8A /* FoodLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611B52B22B49C752005D4E8A /* FoodLiblaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLiblaryApp.swift; sourceTree = "<group>"; };
 		611B52B42B49C752005D4E8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		611B52B62B49C757005D4E8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		611B52B92B49C757005D4E8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		611B52C02B4A9D16005D4E8A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		611B52C22B4A9DA2005D4E8A /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		611B52C42B4AA0DB005D4E8A /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		611B52C62B4AA27A005D4E8A /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		611B52C82B4AA4FD005D4E8A /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
+		611B52CA2B4AB036005D4E8A /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +57,7 @@
 		611B52B02B49C752005D4E8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				611B52AF2B49C752005D4E8A /* FoodLiblary.app */,
+				611B52AF2B49C752005D4E8A /* FoodLibrary.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +67,13 @@
 			children = (
 				611B52B22B49C752005D4E8A /* FoodLiblaryApp.swift */,
 				611B52B42B49C752005D4E8A /* ContentView.swift */,
+				611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */,
+				611B52CA2B4AB036005D4E8A /* HelloView.swift */,
+				611B52C02B4A9D16005D4E8A /* Post.swift */,
+				611B52C22B4A9DA2005D4E8A /* PostData.swift */,
+				611B52C42B4AA0DB005D4E8A /* InfoView.swift */,
+				611B52C62B4AA27A005D4E8A /* InfoRow.swift */,
+				611B52C82B4AA4FD005D4E8A /* InfoDetails.swift */,
 				611B52B62B49C757005D4E8A /* Assets.xcassets */,
 				611B52B82B49C757005D4E8A /* Preview Content */,
 			);
@@ -70,9 +91,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		611B52AE2B49C752005D4E8A /* FoodLiblary */ = {
+		611B52AE2B49C752005D4E8A /* FoodLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 611B52BD2B49C757005D4E8A /* Build configuration list for PBXNativeTarget "FoodLiblary" */;
+			buildConfigurationList = 611B52BD2B49C757005D4E8A /* Build configuration list for PBXNativeTarget "FoodLibrary" */;
 			buildPhases = (
 				611B52AB2B49C752005D4E8A /* Sources */,
 				611B52AC2B49C752005D4E8A /* Frameworks */,
@@ -82,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = FoodLiblary;
+			name = FoodLibrary;
 			productName = FoodLiblary;
-			productReference = 611B52AF2B49C752005D4E8A /* FoodLiblary.app */;
+			productReference = 611B52AF2B49C752005D4E8A /* FoodLibrary.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				611B52AE2B49C752005D4E8A /* FoodLiblary */,
+				611B52AE2B49C752005D4E8A /* FoodLibrary */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611B52C12B4A9D16005D4E8A /* Post.swift in Sources */,
+				611B52CB2B4AB036005D4E8A /* HelloView.swift in Sources */,
+				611B52C32B4A9DA2005D4E8A /* PostData.swift in Sources */,
+				611B52CD2B4AB0C4005D4E8A /* SettingsView.swift in Sources */,
+				611B52C72B4AA27A005D4E8A /* InfoRow.swift in Sources */,
 				611B52B52B49C752005D4E8A /* ContentView.swift in Sources */,
+				611B52C52B4AA0DB005D4E8A /* InfoView.swift in Sources */,
+				611B52C92B4AA4FD005D4E8A /* InfoDetails.swift in Sources */,
 				611B52B32B49C752005D4E8A /* FoodLiblaryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +303,7 @@
 				DEVELOPMENT_TEAM = DDMVZ4HQY9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Food library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nagaevaki.FoodLiblary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nagaevaki.FoodLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,6 +333,7 @@
 				DEVELOPMENT_TEAM = DDMVZ4HQY9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Food library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nagaevaki.FoodLiblary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nagaevaki.FoodLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		611B52BD2B49C757005D4E8A /* Build configuration list for PBXNativeTarget "FoodLiblary" */ = {
+		611B52BD2B49C757005D4E8A /* Build configuration list for PBXNativeTarget "FoodLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				611B52BE2B49C757005D4E8A /* Debug */,
