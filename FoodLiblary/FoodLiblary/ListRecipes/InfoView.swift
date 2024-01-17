@@ -12,6 +12,8 @@ struct InfoView: View {
     
     @Query(sort: \Post.createdAt) private var posts: [Post]
     @Environment(\.modelContext) var modelContext
+    @Binding var titleOn: Bool
+    @Binding var rowHeight: Double
     
     var body: some View {
         NavigationView {
@@ -19,10 +21,10 @@ struct InfoView: View {
                 NavigationLink {
                     InfoDetails(post: post)
                 } label: {
-                    InfoRow(post: post)
+                    InfoRow(post: post, rowHeight: $rowHeight)
                 }
             }
-            .navigationTitle("Recipes")
+            .navigationTitle(titleOn ? "Recipes" : "")
             .listStyle(.plain)
             .refreshable {
                 await loadNewData()
@@ -51,7 +53,7 @@ extension InfoView {
     }
 }
 
-#Preview {
-    InfoView()
-        .modelContainer(for: [Post.self])
-}
+//#Preview {
+//    InfoView()
+//        .modelContainer(for: [Post.self])
+//}

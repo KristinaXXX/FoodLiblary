@@ -18,6 +18,7 @@
 		611B52CB2B4AB036005D4E8A /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52CA2B4AB036005D4E8A /* HelloView.swift */; };
 		611B52CD2B4AB0C4005D4E8A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */; };
 		611B52D12B4BD0C4005D4E8A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B52D02B4BD0C4005D4E8A /* NetworkService.swift */; };
+		61798CB52B5826080033D271 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61798CB42B5826080033D271 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		611B52CA2B4AB036005D4E8A /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 		611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		611B52D02B4BD0C4005D4E8A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		61798CB42B5826080033D271 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */,
 				611B52CA2B4AB036005D4E8A /* HelloView.swift */,
 				611B52C02B4A9D16005D4E8A /* Post.swift */,
+				61798CB42B5826080033D271 /* Settings.swift */,
 				611B52D02B4BD0C4005D4E8A /* NetworkService.swift */,
 				61798CB32B4C1A870033D271 /* ListRecipes */,
 				611B52B62B49C757005D4E8A /* Assets.xcassets */,
@@ -170,6 +173,7 @@
 				611B52C12B4A9D16005D4E8A /* Post.swift in Sources */,
 				611B52CB2B4AB036005D4E8A /* HelloView.swift in Sources */,
 				611B52CD2B4AB0C4005D4E8A /* SettingsView.swift in Sources */,
+				61798CB52B5826080033D271 /* Settings.swift in Sources */,
 				611B52C72B4AA27A005D4E8A /* InfoRow.swift in Sources */,
 				611B52B52B49C752005D4E8A /* ContentView.swift in Sources */,
 				611B52C52B4AA0DB005D4E8A /* InfoView.swift in Sources */,
