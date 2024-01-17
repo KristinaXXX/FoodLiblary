@@ -8,28 +8,35 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var rowHeight = 5.0
-    @State private var titleOn: Bool = true
     @State private var isEditing = false
+    @Environment(\.colorScheme) var colorScheme
+    @Binding var titleOn: Bool
+    @Binding var rowHeight: Double
+    
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Title")) {
-                    Text("Light Theme enabled")
-                    
+                Section {
+                    Text(colorScheme == .light ? "Light Theme enabled" : "Dark Theme enabled")
                     Toggle("Show title list", isOn: $titleOn)
+                    if titleOn {
+                        Text("Navigation title enabled")
+                    }
                 }
-                Section(header: Text("Appearance")) {
+                Section {
                     VStack{
                         Slider(
                             value: $rowHeight,
-                            in: 5...10,
-                            step: 1,
+                            in: 40...100,
+                            step: 5,
                             onEditingChanged: { editing in
                                 isEditing = editing
                             }
                         )
                         Text("\(Int(rowHeight)) pt")
+                        if isEditing {
+                            InfoRow(post: Post.example, rowHeight: $rowHeight)
+                        }
                     }
                 }
             }
