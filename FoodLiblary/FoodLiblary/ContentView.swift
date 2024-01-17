@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @AppStorage(Settings.titleOn) var titleOn: Bool = true
     @AppStorage(Settings.rowHeight) var rowHeight: Double = 40.0
     
