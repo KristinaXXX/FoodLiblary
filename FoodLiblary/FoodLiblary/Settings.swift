@@ -7,4 +7,7 @@
 
 import Foundation
 
-
+enum Settings {
+    static let titleOn = "titleOn"
+    static let rowHeight = "rowHeight"
+}

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct InfoRow: View {
+    
     var post: Post
+    @Binding var rowHeight: Double
+    
     var body: some View {
         HStack {
             Text(post.title)
@@ -18,14 +21,17 @@ struct InfoRow: View {
                 Image(uiImage: uiImage)
                     .resizable()
                     .scaledToFill()
-                    .clipShape(Circle())
-                    .frame(width: 40.0, height: 40.0)
+                    .frame(width: $rowHeight.wrappedValue, height: $rowHeight.wrappedValue)
+                    .cornerRadius(20)
             }
         }
+        .frame(height: $rowHeight.wrappedValue)
+        
     }
 }
 
-//#Preview {
-//    InfoRow(post: Post.example)
-//        .modelContainer(for: Post.self)
-//}
+#Preview {
+    @State var rowHeight: Double = 40
+    return InfoRow(post: Post.example, rowHeight: $rowHeight)
+        .modelContainer(for: Post.self)
+}
