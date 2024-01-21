@@ -21,8 +21,8 @@ struct InfoRow: View {
                 Image(uiImage: uiImage)
                     .resizable()
                     .scaledToFill()
-                    .clipShape(Circle())
                     .frame(width: $rowHeight.wrappedValue, height: $rowHeight.wrappedValue)
+                    .cornerRadius(20)
             }
         }
         .frame(height: $rowHeight.wrappedValue)
@@ -30,7 +30,8 @@ struct InfoRow: View {
     }
 }
 
-//#Preview {
-//    InfoRow(post: Post.example)
-//        .modelContainer(for: Post.self)
-//}
+#Preview {
+    @State var rowHeight: Double = 40
+    return InfoRow(post: Post.example, rowHeight: $rowHeight)
+        .modelContainer(for: Post.self)
+}
