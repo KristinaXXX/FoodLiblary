@@ -16,29 +16,23 @@ struct TopChartView: View {
         VStack(alignment: .leading) {
             Text("Total count: \(posts.list.count)")
                     .font(.title)
-            barChartView()
+            BarChartView(animatedItems: $animatedItems, posts: posts)
         }
         .padding()
     }
+}
+
+struct BarChartView: View {
+    @Binding var animatedItems: [Post: Bool]
+    @ObservedObject var posts: PostList
     
-    func chartAnimation() {
-        for (index, post) in posts.list.enumerated() {
-            DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.01) {
-                withAnimation(
-                    .interactiveSpring(response: 0.3, dampingFraction: 0.5, blendDuration: 0)) {
-                    animatedItems[post] = true
-                    
-                }
-            }
-        }
-    }
-    
-    func barChartView() -> some View {
+    var body: some View {
         Chart {
             ForEach(posts.list) { post in
                 BarMark(
                     x: .value("Total count", animatedItems[post] ?? false ? 1 : 0),
-                    y: .value("Dish area", post.area)
+                    y: .value("Dish area", post.area),
+                    width: 20
                 )
                 .foregroundStyle(by: .value("Dish category", post.category))
                 .cornerRadius(5)
@@ -52,31 +46,18 @@ struct TopChartView: View {
             chartAnimation()
         }
         .chartScrollableAxes(.vertical)
-        .chartOverlay { proxy in
-            GeometryReader { geometry in
-                Rectangle().fill(.clear).contentShape(Rectangle())
-                    .onTapGesture { location in
-                        guard let plot = proxy.plotFrame else { return }
-                        let origin = geometry[plot].origin
-                        let location = CGPoint(
-                            x: location.x - origin.x,
-                            y: location.y - origin.y
-                        )
-                        guard let (_, area) = proxy.value(at: location, as: (Int, String).self) else { return }
-                        print("Area: \(area)")
-                    }
+        .chartYVisibleDomain(length: 10)
+    }
+    
+    func chartAnimation() {
+        for (index, post) in posts.list.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double(index) * 0.01) {
+                withAnimation(
+                    .interactiveSpring(response: 0.3, dampingFraction: 0.5, blendDuration: 0)) {
+                    animatedItems[post] = true
+                    
+                }
             }
         }
     }
 }
-
-//#Preview {
-//    var array: [Post] = []
-//    for i in 1..<10 {
-//        let post = Post(id: String(i), title: "title \(i)", descriptionRecipe: "title \(i)", image: Post.example.image, category: "category \(i)", area: "area \(i)")
-//        array.append(post)
-//    }
-//    
-//    let postList = PostList(list: array)
-//    return TopChartView(posts: postList)
-//}
