@@ -9,16 +9,23 @@ import Foundation
 import SwiftUI
 import SwiftData
 
+class PostList: ObservableObject {
+    @Published var list: [Post]
+    
+    init(list: [Post]) {
+        self.list = list
+    }
+}
+
 @Model
 final class Post: Identifiable {
-    @Attribute(.unique)
-    var id: String
+    
+    @Attribute(.unique) var id: String
     
     var title: String
     var descriptionRecipe: String
     
-    @Attribute(.externalStorage)
-    var image: Data
+    @Attribute(.externalStorage) var image: Data
     var category: String
     var area: String
     var createdAt: Date
