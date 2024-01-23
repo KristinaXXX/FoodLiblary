@@ -35,6 +35,7 @@
 		611B52CC2B4AB0C4005D4E8A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		611B52D02B4BD0C4005D4E8A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		61798CB42B5826080033D271 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		61798CB62B5F8EFB0033D271 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +52,7 @@
 		611B52A62B49C752005D4E8A = {
 			isa = PBXGroup;
 			children = (
+				61798CB62B5F8EFB0033D271 /* README.md */,
 				611B52B12B49C752005D4E8A /* FoodLiblary */,
 				611B52B02B49C752005D4E8A /* Products */,
 			);
